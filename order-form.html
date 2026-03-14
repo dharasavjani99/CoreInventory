@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Shopping Website</title>
+        <link rel="stylesheet" href="order.css">
+        <script src="5a2.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="title" style="font-family: 'Segoe UI', sans-serif;">House of Heels</h1>
+        </div>
+        <h1 class="title" style="font-family: 'Segoe UI', sans-serif; text-align: center;"> Order Form </h1>
+        <br>
+        <div class="order-container">
+            <form onsubmit="validateForm()">
+                Products:
+                <select id="product">
+                    <option value="select">---- Select ----</option>
+                    <option value="Elegant Stiletto Heels">Elegant Stiletto Heels - ₹4,999</option>
+                    <option value="Chic Block Heels">Chic Block Heels - ₹3,499</option>
+                    <option value="Trendy Wedge Heels">Trendy Wedge Heels - ₹3,999</option>
+                </select><br><br>
+                Quantity:
+                <table border="0">
+                    <tr>
+                        <td><button type="button" onclick="decreaseQty()" style="width: 20px; height: 20px; background-color: rgb(100, 3, 19); color: aliceblue;">-</button></td>
+                        <td><input type="text" id="quantity" value="1" readonly style="width: 20px;height: 15px;"></td>
+                        <td><button type="button" onclick="increaseQty()" style="width: 20px; height: 20px; background-color: rgb(13, 94, 11); color: aliceblue;">+</button></td>
+                    </tr>
+                </table>
+                <br><br>
+                Payment Method:
+                <select id="payment">
+                    <option value="select">---- Select ----</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                </select><br><br>
+                Phone Number: <input type="text" id="phone"><br><br>
+                <input type="submit" value="Place Order" style="background-color: rgb(39, 39, 175); color: white; height: 50px;">
+            </form>
+        </div>
+        <br>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="5a_Shopping_Website.html" class="welcome-btn"> Home </a>
+        </div>
+    </body>
+</html>
